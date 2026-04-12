@@ -1,4 +1,4 @@
-# 📊 SQL Learning Journey - 6-9 Month Transition
+# 📊 SQL Learning Journey
 
 Welcome to my SQL learning repository! This project documents my journey from a Customer Relationship Manager to a Data Analyst. Here, I share my handwritten notes, logic schemas, and practical SQL implementation.
 
