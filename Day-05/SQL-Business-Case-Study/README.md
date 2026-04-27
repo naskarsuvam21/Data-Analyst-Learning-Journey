@@ -8,6 +8,7 @@ Below are 5 practical scenarios I solved using MySQL, focusing on revenue analys
 
 ## 📌 Scenario 1: Profit Margin Analysis
 **Problem Statement:** The business needs to identify high-value orders where the net profit strictly exceeds ₹1,000 for reward allocations.
+
 **SQL Solution:**
 
 SELECT order_id, user_id, product_id, 
@@ -21,6 +22,7 @@ WHERE (selling_price - purchase_price) >= 1000;
 
 ## 📌 Scenario 2: Targeted Email Marketing
 **Problem Statement:** Marketing needs a list of 'Active' users whose names start with 'A' and have valid Gmail accounts for a specific festive campaign.
+
 **SQL Solution:**
 
 SELECT name, email, contact FROM users 
@@ -34,6 +36,7 @@ AND email LIKE '%@gmail.com';
 
 ## 📌 Scenario 3: Youth Demographic Targeting
 **Problem Statement:** Product team needs a list of users born in the 90s (1990-1999) to launch a nostalgic product line.
+
 **SQL Solution:**
 
 SELECT * FROM users 
@@ -45,6 +48,7 @@ WHERE DOB BETWEEN '1990-01-01' AND '1999-12-31';
 
 ## 📌 Scenario 4: Metro City Operations
 **Problem Statement:** Logistics requires user data exclusively from key metro cities (Kolkata, Mumbai, Delhi) for a new rapid-delivery rollout.
+
 **SQL Solution:**
 
 SELECT * FROM users 
@@ -56,6 +60,7 @@ WHERE city IN ('Kolkata', 'Mumbai', 'Delhi');
 
 ## 📌 Scenario 5: Loss Prevention / Audit
 **Problem Statement:** Finance needs a clear audit status on all orders, categorizing them strictly as 'Profit', 'Loss', or 'No Profit' based on cost vs. selling price.
+
 **SQL Solution:**
 
 SELECT order_id, selling_price, purchase_price, 
